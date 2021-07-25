@@ -1,0 +1,5 @@
+section{
+    background: url({{ url_for ('static', filename = '/static/img.png') }});
+    background-size: cover;
+    height: calc(100vh-80px);
+}

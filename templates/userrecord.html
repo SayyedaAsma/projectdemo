@@ -1,0 +1,30 @@
+{% extends "base.html"%}
+
+{% block content %}
+<section>
+ <h1><b>User record</b></h1>
+<table id="users">
+   
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>password</th>
+      <th>action</th>
+    </tr>
+    {% for row in users %}
+    <tr>
+      <td>{{row.userID}}</td>
+      <td>{{row.Name}}</td>
+      <td>{{row.Email}}</td>
+      <td>{{row.password}}</td>
+      <td>update</td>
+
+    </tr>
+    {% endfor %}
+  </table>
+</section>
+{% endblock %} 
+
+
+

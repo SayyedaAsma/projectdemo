@@ -1,0 +1,37 @@
+{% extends "base.html"%}
+
+{% block content %}
+<section>
+ <h1><b>Pakistani Cuisine</b></h1>
+ <button class="bl"><a href="{{url_for('insert')}}" >insert</a></button>
+<table id="recipex">
+   
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>ingredients</th>
+      <th>imagepath</th>
+      <th>youtubelink</th>
+      <th>action</th>
+      
+    </tr>
+    {% for row in pakistanicuisine %}
+    <tr>
+      <td>{{row.ID}}</td>
+      <td>{{row.title}}</td>
+      <td>{{row.Description}}</td>
+      <td>{{row.ingredients}}</td>
+      <td>{{row.imagepath}}</td>
+      <td>{{row.youtubelink}}</td>
+      <td>
+        <a href="{{url_for('update',ID=row.ID)}}" type="button" class="btn btn-outline-dark btn-sn mx-2">update</button>
+        <a onclick="return confirm('are you sure you want to delete?');" href="{{url_for('delete',ID=row.ID)}}" type="button" class="btn btn-outline-dark btn-sn mx-2">Delete</button>
+
+
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</section>
+{% endblock %} 

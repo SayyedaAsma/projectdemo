@@ -1,0 +1,30 @@
+.one{
+    margin-top: 40px;
+    margin-left: 120px;
+    width: 1060px;
+    height:700px;
+    background:white
+    
+}
+.two{
+    width: 1000px;
+    height: 400px;
+    margin-top: 40px;
+    padding-left: 30px;
+}
+
+.three{
+    color:black;
+    font-size: 18px;
+    text-align: left;
+   
+    text-decoration: none;
+    text-transform: lowercase; 
+    text-align: center; 
+}
+
+.three h2{
+    color:turquoise;
+    font-size: 20px;
+    
+}

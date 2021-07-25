@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none ;
+    list-style: none;
+   
+}
+body{
+    font-family: montserrat;
+    
+}
+nav{
+    height: 90px;
+    width: 100%;
+    background-color:turquoise;
+}
+label.logo
+{
+font-size:35px ;
+font-weight:bold ;
+font-family:montserrat;
+color: snow;
+padding: 0 100px;
+line-height: 80px;
+
+}
+
+nav ul
+{
+ float: right;
+ margin-right: 40px;
+
+}
+
+nav ul li
+{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+    text-align: center;
+}
+nav ul li ul li{
+    background-color:turquoise;
+    
+    display: none;
+}
+nav ul li ul li a{
+    padding: 4px 4px;
+    font-size: 10px;
+}
+ul li:hover ul li{
+    display: block;
+}
+
+nav ul li a
+{
+ display: block;    
+ color: snow;
+ font-size: 18px;
+ text-transform: uppercase;
+ border: 0px solid slateblue;
+ padding: 5px 5px;
+ border-radius: 0px;
+
+}
+
+
+
+a.active, a:hover
+{
+border: 1px solid blue;
+color: blue;
+}
+
+#users 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+section
+{
+  padding-top: 70px;
+  margin-left: 30px; 
+  margin-right: 30px;
+ 
+}
+
+section h1{
+    color:turquoise;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    text-decoration: underline double;
+    text-decoration-color: turquoise;
+
+}
+
+#users td, #users th {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  
+#users tr:nth-child(even){background-color: #f2f2f2;}
+  
+#users tr:hover {background-color: #ddd;}
+  
+#users th {
+   
+    text-align: left;
+    background-color: turquoise;
+    color:black;
+}
+
+#recipex td, #recipex th {
+    border: 1px solid black;
+    padding: 8px;
+  }
+#recipex th {
+   
+    text-align: left;
+    background-color: turquoise;
+    color:black;
+}  
+#recipex 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+#recipex tr:nth-child(even){background-color: #f2f2f2;}
+  
+#recipex tr:hover {background-color: #ddd;}
+.bl
+{
+    display: inline-block;
+    width: 250px;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    
+    border-radius: 2px solid turquoise;
+    background-color: white;
+    color:turquoise;
+   
+
+
+}
+  

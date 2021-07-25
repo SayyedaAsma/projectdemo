@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"  type="text/css" href="{{url_for('static',filename='/update.css')}}">
+</head>
+<body>
+  
+  <form action="" method="POST" class="form" enctype="multipart/form-data" class="form-inline">
+    <div class="tx">
+        <h2>update your database</h2>
+     
+     
+    </div>
+    <div class="tx">
+      <label for="title" class="form-label">recepie name</label>
+      <input type="text" class="form-control" name="title"  value="{{drinksandshakes.title}}" id="title">
+      <input type="hidden" class="form-control" name="ID"  value="{{drinksandshakes.ID}}" id="ID">
+    </div>
+    <div class="tx">
+      <label for="title" class="form-label">recepie description</label>
+      <input type="text" class="form-control" name="Description"  value="{{drinksandshakes.Description}}" id="Description">
+    </div>
+    <div class="tx">
+      <label for="title" class="form-label">recepie ingredients</label>
+      <input type="text" class="form-control" name="ingredients"  value="{{drinksandshakes.ingredients}}" id="ingredients">
+    </div>
+    <div class="tx">
+      <label for="title" class="form-label">youtubelink</label>
+      <input type="text" class="form-control" name="youtubelink"  value="{{drinksandshakes.youtubelink}}" id="youtubelink">
+    </div>
+    <div>
+      <label> choose image: </label>
+      <input type="file" name="files[]" id="fileInput" class="form-control" value="{{drinksandshakes.imagepath}}" > 
+    </div>
+    <button type="submit" class="l" value="UPLOAD"">update</button>
+  </form>
+  
+</body>
+</html>

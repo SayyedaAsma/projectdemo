@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>user side</title>
+  <link rel="stylesheet"  type="text/css" href="{{url_for('static',filename='/front.css')}}">
+  <script src="https://kit.fontawesome.com/13ccb33514.js" crossorigin="anonymous"></script>
+ 
+
+  <style>  
+  </style>
+</head>
+<body>
+  <div class="header">
+      <img src="/static/image1.jpg" width="1100px" height="350px">    
+  </div>
+  <div class="nav">
+    <nav>
+            
+      <ul>
+        <li class="recipex">Recipex</li> 
+        <li> <a href="{{ url_for('front')}}">Home</a></li>
+        <li><a href="{{ url_for('categories')}}">Recipies</a></li> 
+        <li><a href="{{ url_for('aboutus')}}"'>about us</a></li>
+        <li><a href="/logout">logout</a></li>
+      </ul>
+    </nav>
+
+
+  </div>
+  <div class="slideshow middle">
+      
+    <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">  
+        <div class="slide s1">
+              <img src="/static/navimage.jpg">
+        </div>
+        <div class="slide">
+            <img src="/static/2.jpg">
+        </div>
+        <div class="slide">
+            <img src="/static/1.jpg">
+        </div>
+
+    </div>
+  </div>
+  <div class="navigation">
+      <label for="r1" class="bar"></label>
+      <label for="r2" class="bar"></label>
+      <label for="r3" class="bar"></label>
+   
+  </div>
+
+ 
+
+
+ 
+  <footer>
+    <div class="footer-content">
+      <h3>Recipex</h3>
+      <p> found us at:</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+   
+  </footer>
+</body>
+</html>

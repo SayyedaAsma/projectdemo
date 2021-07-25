@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>user side</title>
+  <link rel="stylesheet"  type="text/css" href="{{url_for('static',filename='/recipie.css')}}">
+  <script src="https://kit.fontawesome.com/13ccb33514.js" crossorigin="anonymous"></script>
+ 
+
+  <style>  
+  </style>
+</head>
+<body>
+  <div class="header">
+      <img src="/static/image1.jpg" width="1100px" height="350px">    
+  </div>
+  <div class="nav">
+    <nav>
+            
+      <ul>
+        <li class="recipex">Recipex</li> 
+        <li> <a href="{{ url_for('front')}}">Home</a></li>
+        <li><a href="{{ url_for('categories')}}">Recipies</a></li> 
+        <li><a href='/home'>about us</a></li>
+        <li><a href="/logout">logout</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class ="categories">
+        <div class="img">
+          <img src="/static/uploads/pakistani.jpg" width="285px" height="350px" >
+          
+        </div>
+        <div class="content">
+          <a href="/dispp">pakistani cuisine</a>
+        </div>
+  </div>
+
+  <div class ="categories">
+      <div class="img">
+        <img src="/static/uploads/chinese.jpg" width="285px" height="350px" >
+        
+      </div>
+      <div class="content">
+        <a href="/dispc">chinese cuisine</a>
+      </div>
+  </div>
+
+  <div class ="categories">
+      <div class="img">
+        <img src="/static/uploads/indian.jpg" width="285px" height="350px" >
+        
+      </div>
+      <div class="content">
+        <a href="/dispi">indian cuisine</a>
+      </div>
+  </div>
+
+  <div class ="categories">
+      <div class="img">
+        <img src="/static/uploads/deserts.jpg" width="285px" height="350px" >
+        
+      </div>
+      <div class="content">
+        <a href="/dispd">Deserts</a>
+      </div>
+  </div>
+
+  <div class ="categories">
+      <div class="img">
+          <img src="/static/uploads/bakery.jpg" width="285px" height="350px" >
+          
+        </div>
+        <div class="content">
+          <a href="/dispb">bakery products</a>
+        </div>
+  </div>
+
+  <div class ="categories">
+    <div class="img">
+      <img src="/static/uploads/drinks.jpg" width="285px" height="350px" >
+      
+    </div>
+    <div class="content">
+      <a href="/dispds">drinks and shakes</a>
+    </div>
+  </div>
+  <div >
+
+  <div class ="categories">
+      <div class="img">
+        <img src="/static/uploads/snacks.jpg" width="285px" height="350px" >
+        
+      </div>
+      <div class="content">
+        <a href="/disps">snacks</a>
+  </div>
+  <footer>
+      <div class="footer-content">
+          <h3>Recipex</h3>
+          <p> found us at:</p>
+          <ul class="socials">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+      </div>
+    
+  </footer> 
+</body>
+</html>

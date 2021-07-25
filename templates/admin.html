@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>admin</title>
+  <link rel="stylesheet"  type="text/css" href="{{url_for('static',filename='/admin.css')}}">
+  <style>
+    body, html 
+    {
+      height: 100%;
+      margin: 0;
+    }
+    .bg
+    {
+      margin: 10;
+      background: url("{{  url_for('static', filename='/recepie.jpg')  }}") no-repeat;
+            /* Full height */
+      height: 100%; 
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <label class="logo">Recipex</label>
+    <ul>
+      <li><a href="/userrecord">User record</a></li>
+      <li><a href='admin.html'>Recipies records</a>
+          <ul>
+            <li><a href='/deserts'>Deserts</a></li> 
+            <li><a href='/pakistani'>Pakistani Cuisine</a></li>
+            <li><a href="/indian">Indian Cuisine</a></li>
+            <li><a href="/drinks">Drinks and Shakes</a></li>
+            <li><a href="/chinese">Chinese Cuisine</a></li>
+            <li><a href='/recipierecord'>bakery products</a></li>
+            <li><a href='/snacks'>snacks</a></li>
+
+          </ul>
+      
+      
+      </li> 
+      
+      
+      <li><a href="/logout">logout</a></li>
+    </ul>
+  </nav>
+  <section class="bg">
+
+
+  </section>
+  
+</body>
+</html>
